@@ -28,6 +28,7 @@ Consider recognizing national park names, i.e. distinguishing them from other ph
 - Python IDE(Spyder,PyCharm) /Code Editor(VsCode)
 - Latest version of Git
 - Web framework [Streamlit](https://streamlit.io/) ```pip install streamlit```
+- [Heroku](https://dashboard.heroku.com/apps) PAAS to host app live
 ### Python libraries
 -   [Spacy](https://pypi.org/project/scapy/) Nlp library ```pip install scapy```
 -   [wikipedia](https://pypi.org/project/wikipedia/) API For searching the contents ```pip install wikipedia``
@@ -38,3 +39,47 @@ Consider recognizing national park names, i.e. distinguishing them from other ph
 ### Project Live Url
 
 ## Execution
+### Data Scraping using Wikipedia API
+- Scraping Data in Python Notebook using the [Wikipedia API](https://pypi.org/project/wikipedia/), Giving the user input to search and then retrive his search and -  perform text scraping
+- Using [SpaCy Cli](https://spacy.io/api/cli). It provides a range of helpful commands for downloading and training pipelines, converting data and debugging your config, data and installation 
+```import spacy.cli ```
+### Perfoming NER over Scraped data
+- Download trained pipelines for spaCy. The downloader finds the best-matching compatible version and uses pip install to download the Python package. Direct downloads don’t perform any compatibility checks and require the pipeline name to be specified with its version (e.g. en_core_web_sm-3.0.0). spacy.cli.download("en_core_web_md")
+- Using Spacy Built_in Visualizer Displacy for annoted text highlighting extract entities like city, person, organisation, Date, Geographical Entity, Product etc.
+Visualized named entities
+![Screenshot (1)](https://user-images.githubusercontent.com/69640533/111735990-fc113e00-88a2-11eb-8497-39718c27ab01.png)
+## Desigining Front end of App using Web Framework (Streamlit)
+- Installation of [Streamlit](https://streamlit.io/) web Framework for Python for deploying High end Machine learning Model
+### Introduction to Streamlit
+Streamlit is an open-source app framework for Machine Learning and Data Science teams. Streamlit turns data scripts into shareable web apps in minutes. All in Python. All for free. No front‑end experience required.
+
+- Installing streamlit
+- ```pip install streamlit```
+- ```streamlit hello```
+### Stream lit
+- Create a python file name it as app.py
+- Refer to [StreamlitDocs](https://docs.streamlit.io/en/stable/)
+- After Sucessfully installing Streamlit framework we will start coding our main python file import ```streamlit as st```
+- We will add our NLP libraries and various libraries of python and start building our front end of app.
+- To give a good look to our web app we will add an external css to main app.py file
+- After designing, Our webpage will looke like this:
+![Screenshot (2)](https://user-images.githubusercontent.com/69640533/111736352-ab4e1500-88a3-11eb-8350-a919eda25986.png)
+## Executing Project
+- To execute our project we just have to direct to our directory in local computer 
+- Run the file with:
+```streamlit run [filename]```
+- The project will execute on your local domain in your browser
+- After typing our search query in Text area our NER system will extract entities like city, person, organisation, Date, Geographical Entity, Product etc and will annote them.
+![Screenshot (3)](https://user-images.githubusercontent.com/69640533/111736586-231c3f80-88a4-11eb-9781-e337dd7a1071.png)
+- It will clearly classify the search result into city, person, organisation, Date, Geographical Entity, Product etc.
+
+## Deployment of Project
+- Now the Deployment of the project is the last stage of Project we can deploy over publicly accessible location like on AWS, Heroku, PythonAnywhere, etc.
+- We are using Deployment pleatform Heroku[https://dashboard.heroku.com/apps]
+### Heroku
+- Heroku is a cloud platform as a service supporting several programming languages.
+One of the first cloud platforms, Heroku has been in development since June 2007, when it supported only the Ruby programming language, but now supports Java, Node.js, Scala, Clojure, Python and PHP.
+- You can learn more about it [Heroku Docs]()
+- So, We will Deploy our model over url and make it publically availaible.
+### Our Project is Ready
+#### For any queries Feel free to reach @shivampandit22698@gmail.com
