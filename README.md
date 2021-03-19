@@ -76,6 +76,7 @@ Streamlit is an open-source app framework for Machine Learning and Data Science 
 ## Deployment of Project
 - Now the Deployment of the project is the last stage of Project we can deploy over publicly accessible location like on AWS, Heroku, PythonAnywhere, etc.
 - We are using Deployment pleatform Heroku[https://dashboard.heroku.com/apps]
+- We need to install Heroku Cli in Windows
 ### Heroku
 - Heroku is a cloud platform as a service supporting several programming languages.
 One of the first cloud platforms, Heroku has been in development since June 2007, when it supported only the Ruby programming language, but now supports Java, Node.js, Scala, Clojure, Python and PHP.
